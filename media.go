@@ -1,4 +1,4 @@
-package ocpc
+package ocpc_media
 
 import (
 	"encoding/json"

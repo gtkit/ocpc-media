@@ -1,5 +1,5 @@
 // @Author 2024/1/18 15:17:00
-package ocpc
+package ocpc_media
 
 const (
 	hwCallbackUrl = "https://ppscrowd-drcn.op.cloud.huawei.com/action-lib-track/hiad/v2/actionupload"

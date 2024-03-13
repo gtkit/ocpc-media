@@ -1,4 +1,4 @@
-module github.com/gtkit/ocpc
+module github.com/gtkit/ocpc-media
 
 go 1.22
 
