@@ -4,11 +4,22 @@ import (
 	"encoding/json"
 	"strings"
 
+	"github.com/go-resty/resty/v2"
 	"github.com/gtkit/encry/md5"
 )
 
-func New() {
-	newResty()
+var restyClient *resty.Client
+
+func New(resty *resty.Client) {
+	if resty == nil {
+		panic("resty client is nil")
+	}
+	restyClient = resty
+}
+
+// R 返回一个新的请求对象.
+func R() *resty.Request {
+	return restyClient.R()
 }
 
 // VerifySign 验证sign.
